@@ -1,0 +1,252 @@
+<DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src= "script.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+	<!----hero section start---->
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Portfo<span>lio</span></h2>
+			<ul id="sidemenu">
+				<li><a href="#content">Home</a></li>
+				<li><a href="#about-text">About me</a></li>
+				<li><a href="#service">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#main-content">Contact me</a></li>
+				<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+			</ul>
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+			<!---<a href="#" class="btn">Subscribe</a>--->
+		</nav>
+
+		<div class="content" id="content">
+			<h4>Hello, my name is</h4>
+			<h1>Chathuranga <span>Vidusanie</span></h1>
+			<h3>I am a web developer.</h3>
+			<div><button type="button">Download CV</button></div>
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section class="about">
+		<div class="main">
+			<div class="main-image">
+				<img src="image/main-image.jpg" alt="main-image">
+			</div>
+			<div class="about-text" id="about-text">
+				<h2>About me</h2>
+				<h5>Developer <span>& Designer</span></h5>
+				<p id="para">I am a front end devoloper.I make the website more and more interactive with web animations. I also undergraduate in department of IT of Faculty of Applied Science in Rajarata University of Sri Lanka.</p>
+				<div class="tab-titles" id="tab-titles">
+		          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+		          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+		          <p class="tab-links" onclick="opentab('education')">Education</p>
+	            </div>
+	            <div class="tab-contents active-tab" id="skills">
+	            	<ul>
+	            		<li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+	            		<li><span>Web Development</span><br>Web app Development</li>
+	            		<li><span>App</span><br>Building Android/IOS apps</li>
+	            	</ul>
+	            </div>
+	            <div class="tab-contents" id="experience">
+	            	<ul>
+	            		<li><span>2021 - Current</span><br>Designing Web/App interfaces Training</li>
+	            		<li><span>2019 - 2021</span><br>Web Developer </li>
+	            	</ul>
+	            </div>
+	            <div class="tab-contents" id="education">
+	            	<ul>
+	            		<li><span>2018</span><br>A/L in Maths stream</li>
+	            		<li><span>2020 - Current</span><br>Undergraduate in Applied Science faculty in Rajarata University of Sri Lanka</li>
+	            	</ul>
+	            </div>
+				<button type="button">Let's Talk</button>
+			</div>
+		</div>
+	</section>
+
+	<!---- service section start--->
+	<div class="service" id="service">
+		<div class="title">
+			<h2>Our services</h2>
+		</div>
+		<div class="box">
+			<div class="card">
+				<i class="fa-solid fa-bars"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Get a beautiful website design that people love to engage with.</p>
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fa-brands fa-slack"></i>
+				<h5>Logo Designing</h5>
+				<div class="pra">
+					<p>Get your attractive logo and all the branding files you need.</p>
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fa-regular fa-bell"></i>
+				<h5>Graphic Designing</h5>
+				<div class="pra">
+					<p>Get a unconventionalflyers with cool custom graphics.</p>
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!----portfolio section start--->
+	<div class="portfolio" id="portfolio">
+		<div class="title">
+			<h2>My Work</h2>
+		</div>
+		<div class="work-list">
+			<div class="work">
+				<img src="image/work_1.jpeg" alt="work_1">
+				<div class="layer">
+					<h3>Social media App</h3>
+					<p>The app connects you to the telented people arround the world.Download it from play store.</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="image/work_2.jpg" alt="work_2">
+				<div class="layer">
+					<h3>Online shopping App</h3>
+					<p>The app connects you to the telented people arround the world.Download it from play store.</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="image/work_3.jpg" alt="work_3">
+				<div class="layer">
+					<h3>Music App</h3>
+					<p>The app connects you to the telented people arround the world.Download it from play store.</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+		</div>
+	</div> 
+	
+	<!----footer start--->
+	<div class="footer">
+		<div class="main-content" id="main-content">
+			<div class="left-box">
+				<h2>About Us</h2>
+				<div class="cnt">
+					<p>You can find more about us follow these.</p>
+					<div class="social">
+							<a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+							<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+							<a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="center-box">
+				<h2>Address</h2>
+				<div class="cnt">
+					<div class="place">
+						<i class="fa-solid fa-location-dot"></i>
+						<span class="text" style="color:#c2929e;" >220, Horana, Kaluthara</span>
+					</div>
+					<div class="phone">
+						<i class="fa-solid fa-phone-volume"></i>
+						<span class="text" style="color:#c2929e;" >+034 967 5643</span>
+					</div>
+					<div class="email">
+						<i class="fa-solid fa-envelope"></i>
+						<span class="text" style="color:#c2929e;" >chathukodippili@gmail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="right-box">
+				<h2>Contact <span>Us</span></h2>
+				<div class="cnt">
+					<form action="connect.php" name = "submit-to-google-sheet" method="post" class="form">
+						<input type="" name="Name" placeholder="Enter your name" required>
+						<input type="email" name="Email" placeholder="Enter your email" required>
+						<textarea name="Message" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
+						<button type="submit" name="" value="Submit" class="Bttn">Submit</button><br><br>
+
+						<span id="success"></span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var tablinks = document.getElementById("tab-titles");
+		var tabcontents = document.getElementByClassName('tab-contents');
+
+		function opentab(tabname){
+			for(tablink of tablinks){
+				tablink.classList.remove("active-link");
+			}
+			for(tabcontent of tabcontents){
+				tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			document.getElementById("tabname").classList.add("active-tab");
+		}
+	</script>
+
+	<script>
+		var sidemeu = document.getElementById("sidemenu");
+
+		function openmenu(){
+			sidemeu.style.right = "0";
+		}
+
+		function closemenu(){
+			sidemeu.style.right = "-200px";
+		}
+	</script>
+	
+	<script type="text/javascript">
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbwMEI7ke1rKJ-VVvvahdIvyry6dx6hDxKhSVPQRUnQ3-yi5v5eS67RCc54t-0v0bc31qw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const success = document.getElementById('success');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+      	success.innerHTML="Data successfully submitted !";
+
+      	setTimeout(function()
+      	{
+      		success.innerHTML="";
+      	},5000)
+      	form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+	</script>
+</body>
+</html>
