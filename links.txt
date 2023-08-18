@@ -1,0 +1,2 @@
+Google sheet - https://docs.google.com/spreadsheets/d/1iVElISWdMRNFV3oglTLMMR6kfittqTsi0JOWOriTE2Q/edit?usp=sharing 
+Database -http://localhost/phpmyadmin/index.php?route=/database/structure&db=portfolio
